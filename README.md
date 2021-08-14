@@ -14,11 +14,11 @@ https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-
 
 All Episodes:
 - Ep.1: Setup and Assets
-- Ep.2: Level Design
-- Ep.3: Character Controller for Desktop
-- Ep.4: Character Controller for Mobile Devices
-- Ep.5: Character Animations
-- Ep.6: Camera Controller
+- Ep.2: Level Design With Tilemap
+- Ep.3: Character Controller
+- Ep.4: Character Animations [Idle]
+- Ep.5: Character Animations [Run]
+- Ep.6: Character Animations [Jump]
 - Ep.7: Collecting Coins
 - Ep.8: Coin Animation
 - Ep.9: High Score
