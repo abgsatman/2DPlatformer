@@ -16,13 +16,11 @@ All Episodes:
 - Ep.1: Setup and Assets
 - Ep.2: Level Design With Tilemap
 - Ep.3: Character Controller
-- Ep.4: Character Animations [Idle]
-- Ep.5: Character Animations [Run]
-- Ep.6: Character Animations [Jump]
-- Ep.7: Collecting Coins
-- Ep.8: Coin Animation
-- Ep.9: High Score
-- Ep.10: AI Enemy Controller
-- Ep.11: 3 Lives Logic
-- Ep.12: Game Over
-- Ep.13: Restart the Game
+- Ep.4: Character Animations
+- Ep.5: Collecting Coins
+- Ep.6: Coin Animation
+- Ep.7: High Score
+- Ep.8: AI Enemy Controller
+- Ep.9: 3 Lives Logic
+- Ep.10: Game Over
+- Ep.11: Restart the Game
