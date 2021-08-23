@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class PlayerController : MonoBehaviour
     private float jumpSpeed = 3f;
 
     public Animator animator;
+
+    [SerializeField]
+
+    private int score;
+    public Text scoreText;
     
     // Start is called before the first frame update
     void Start()
@@ -47,6 +53,16 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0f, 180f, 0f);
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "coin")
+        {
+            Debug.Log("+1 coin");
+            score++;
+            scoreText.text = score.ToString();
+            Destroy(collision.gameObject);
+        }
     }
 }
