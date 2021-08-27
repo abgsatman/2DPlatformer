@@ -53,6 +53,12 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0f, 180f, 0f);
         }
+
+        if(Input.GetKey("q"))
+        {
+            PlayerPrefs.DeleteAll();
+            Debug.Log("deleted all!");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -63,6 +69,23 @@ public class PlayerController : MonoBehaviour
             score++;
             scoreText.text = score.ToString();
             Destroy(collision.gameObject);
+            CheckHighScore();
+        }
+
+        if(collision.tag == "noway")
+        {
+            //gameover
+            Debug.Log("Game Over!");
+            CheckHighScore();
+        }
+    }
+
+    void CheckHighScore()
+    {
+        if(PlayerPrefs.GetInt("highscore") < score)
+        {
+            PlayerPrefs.SetInt("highscore", score);
+            Debug.Log("new record!");
         }
     }
 }
